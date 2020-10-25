@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MoveCircle" android:label="@string/title02"/>
-        <activity android:name=".FreeLine" android:label="@string/title01"/>
+        <activity android:name=".Game2" android:label="@string/title02"/>
+        <activity android:name=".Game1" android:label="@string/title01"/>
         <activity android:name=".MainActivity" android:label="@string/mainLabel">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

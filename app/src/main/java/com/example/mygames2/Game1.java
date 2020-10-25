@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class FreeLine extends AppCompatActivity {
+public class Game1 extends AppCompatActivity {
     private MyView vw;
     ArrayList<Vertex> arVertex;
 

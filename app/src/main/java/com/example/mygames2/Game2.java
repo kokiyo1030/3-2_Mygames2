@@ -10,7 +10,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MoveCircle extends AppCompatActivity {
+public class Game2 extends AppCompatActivity {
     private MyView vw;
 
     public void onCreate(Bundle savedInstanceState) {
