@@ -1,6 +1,7 @@
 package com.example.mygames2;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -14,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class Game1 extends AppCompatActivity {
+public class FreeLine extends AppCompatActivity {
     private MyView vw;
     ArrayList<Vertex> arVertex;
 

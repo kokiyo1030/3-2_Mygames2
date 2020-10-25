@@ -2,9 +2,12 @@ package com.example.mygames2;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Parcelable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -57,9 +60,7 @@ public class GameAdapter extends BaseAdapter implements View.OnClickListener {
         startBtn = (Button)v.findViewById(R.id.btn);
 
         mGame = getItem(position);
-
         startBtn.setTag(mGame);
-        final String ID = String.valueOf(mGame);
 
         if(mGame != null) {
             if(mGame.getGameImg() != null) {
@@ -79,18 +80,23 @@ public class GameAdapter extends BaseAdapter implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Game clickItem = (Game)v.getTag();
-        String sText = ((TextView) v).getText().toString();
-        switch (v.getId()) {
-            case R.id.btn:
-                if (sText.equals("자유 곡선")) {
-                    Intent intent = new Intent(v.getContext(), Game1.class);
-                    v.getContext().startActivity(intent);
-                } else {
-                    Intent intent2 = new Intent(v.getContext(), Game2.class);
-                    v.getContext().startActivity(intent2);
-                }
-                Toast.makeText(mContext, clickItem.getmToast(), Toast.LENGTH_SHORT).show();
-                break;
-        }
+//        String sText = ((TextView) v).getText().toString();
+//        switch (v.getId()) {
+//            case R.id.btn:
+//                if (sText.equals("자유 곡선")) {
+//                    Intent intent = new Intent(v.getContext(), FreeLine.class);
+//                    v.getContext().startActivity(intent);
+//                } else {
+//                    Intent intent2 = new Intent(v.getContext(), MoveCircle.class);
+//                    v.getContext().startActivity(intent2);
+//                }
+//                Toast.makeText(mContext, clickItem.getmToast(), Toast.LENGTH_SHORT).show();
+//                break;
+
+//        switch (v.getId()) {
+//            case R.id.btn:
+//                Toast.makeText(mContext, clickItem.getmToast(), Toast.LENGTH_SHORT).show();
+//                break;
+//        }
     }
 }
